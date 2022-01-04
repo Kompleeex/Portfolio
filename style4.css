@@ -59,9 +59,14 @@ nav{
     background: rgba(58, 58, 58, 0.918);
  }
 
+ .python a{
+     text-decoration: none;
+ }
+
 .python p {
     color:black;
     font-family:Antaris_ST_CF ;
+    
     
 }
 
@@ -69,6 +74,10 @@ nav{
     border: 3px solid black;
     border-radius: 20px;
     margin: 20px;
+ }
+
+ .java a{
+    text-decoration: none;
  }
 
  .java p {
@@ -85,6 +94,10 @@ nav{
     border: 3px solid black;
     border-radius: 20px;
     margin: 20px;
+ }
+
+ .webprogramozas a{
+    text-decoration: none;
  }
 
 .webprogramozas p {

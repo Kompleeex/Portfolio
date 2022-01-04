@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    font-family: monospace;
+    background-size: 100%;
+    background-image: url(kepek/háttér.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+
+}
+
+main{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    display: grid;
+    width: 60%;
+    margin: auto;
+    margin-top: 25px;
+    background: rgba(200, 221, 221, 0.24);
+    grid-template-areas:" h h h h "
+                        "ar ar ar ar"
+                        "s s s s"
+                        "f f f f"
+                        ;
+}
+
+nav{
+    background-color: rgba(200, 221, 221, 0.24);
+    grid-area: n;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 60%;
+    margin:auto;
+    font-family: Antaris_ST_CF;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 25px;
+ }
+
+
+
+nav a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 0px 45px 0px 45px;
+}
+
+nav h1 {
+    font-size: 35px;
+
+}
+
+ nav a:hover{
+    background-color: rgb(150, 61, 34);
+    box-shadow: .75em .75em 1em;
+ }
+
+header{
+    grid-area:  h;
+    text-align: center;
+}
+
+header h1{ 
+    font-family: Antaris_ST_CF;
+    color: rgb(0, 0, 0);
+}
+
+article{
+    grid-area: ar;
+    text-align: center
+}
+
+article img{
+    width: 100px;
+    margin: 20px;
+}
+
+article p{
+    font-family: NeoBulletin Limited Free Version;
+    color: rgb(0, 0, 0);
+}
+
+footer{
+    grid-area: f;
+}
+
+article h2{
+    font-size: 25px;
+    font-family: Antaris_ST_CF;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1px;
+    border-bottom: 3px solid black;
+}
+
+footer{
+    font-family: Antaris_ST_CF;
+    text-align: center;
+    grid-area: f;
+    background-color: rgba(130, 138, 138, 0.24);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 25px ;
+}
+
+@media only screen and (max-width: 900px) {
+    article p a {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+
+  }
+
+

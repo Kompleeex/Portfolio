@@ -1,0 +1,106 @@
+:root{
+    --bg-color: hsl(49 37% 94%)
+}
+
+
+body{
+    margin: 0;
+    font-family: monospace;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-size: 100%;
+    background-image: url("kepek/háttér.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+ h1{
+    font-size: 50px;
+    position: relative;
+    font-family: Antaris_ST_CF;
+    margin: 0px 15px 0px 15px;
+}
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before{
+    background:rgb(206, 88, 72);
+    animation: typewriter 3s ease forwards;
+}
+
+@keyframes typewriter{
+    to{ right: 100% }
+}
+
+p{
+    font-size: 25px;
+    position: relative;
+    font-family:Antaris_ST_CF;
+}
+
+p::before,
+p::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+p::before{
+    background:rgb(163, 162, 162);
+    animation: pwrite 3s ease forwards;
+    
+}
+
+@keyframes pwrite{
+    to{ left: 100% }
+}
+ul{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+ul li{ 
+    margin:5px;
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+ul li a{
+    font-size: 20px;
+    font-family: Antaris_ST_CF;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover{
+    background-color: rgb(150, 61, 34);
+    box-shadow: .75em .75em 1em;
+}
+
+
+
+@media only screen and (max-width: 600px) {  
+    ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }

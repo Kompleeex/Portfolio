@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    font-family: monospace;
+    min-height: 100vh;
+    background-size: 100%;
+    /*background: var(--bg-color);*/
+    background-image: url(kepek/háttér.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+main{
+    display: grid;
+    width: 60%;
+    margin: auto;
+    margin-top: 25px;
+    background-color: rgba(130, 138, 138, 0.24);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    grid-template-areas:"n n n n "
+                        "h h h h"
+                        " ar ar ar ar"
+                        " f f f f";
+}
+nav{
+    background-color: rgba(200, 221, 221, 0.24);
+    grid-area: n;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin: 15px 400px 0px 400px;
+    font-family: Antaris_ST_CF;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 25px;
+ }
+
+ article img{
+    max-width: 200px;
+ }
+
+ article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 25px;
+    text-align: center;
+    
+}
+ 
+
+ .python{
+     border: 3px solid black;
+     border-radius: 20px;
+     margin: 20px;
+ }
+
+ .python:hover{
+    box-shadow:.75em .75em 1em;
+    background: rgba(58, 58, 58, 0.918);
+ }
+
+.python p {
+    color:black;
+    font-family:Antaris_ST_CF ;
+    
+}
+
+ .java{
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 20px;
+ }
+
+ .java p {
+    color:black;
+    font-family:Antaris_ST_CF ;
+ }
+
+ .java:hover{
+    box-shadow:.75em .75em 1em;
+    background: rgba(58, 58, 58, 0.918);
+ }
+
+ .webprogramozas{
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 20px;
+ }
+
+.webprogramozas p {
+    color:black;
+    font-family:Antaris_ST_CF ;
+ }
+
+ .webprogramozas:hover{
+    box-shadow:.75em .75em 1em;
+    background: rgba(58, 58, 58, 0.918);
+ }
+
+ nav{
+    background-color: rgba(200, 221, 221, 0.24);
+    grid-area: n;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    font-family: Antaris_ST_CF;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 25px;
+    
+ }
+
+
+
+nav a{
+
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 0px 45px 0px 45px;
+}
+
+
+
+nav h1 {
+    font-size: 35px;
+}
+
+
+
+ nav a:hover{
+    background-color: rgb(150, 61, 34);
+    box-shadow: .75em .75em 1em;
+ }
+
+  footer{
+    font-family: Antaris_ST_CF;
+    text-align: center;
+    grid-area: f;
+    background-color: rgba(130, 138, 138, 0.24);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1650px) {
+    article{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 1320px) {
+    article{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    article{
+        grid-template-columns: 1fr;
+    }
+
+    
+    article img{
+        max-width: 70px;
+    }
+}
